@@ -1,0 +1,67 @@
+.medicos {
+    display: block;
+   }
+    
+   .title {
+    color:  var(--color--vivid-cyan-blue);
+    /* estilos título */ 
+   }
+   
+   .grid {
+    /* estilos grid */ 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;    
+   }
+   .card{
+    /* estilos para descripcion de las tarjetas de cada medico*/
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px;
+   }
+   .avatar{
+    /* estilos de la imagen */
+    height: 100px;
+    width: 100px;
+    border-radius: 15px;
+   }
+   .content{
+    /* estilos generales del contenido */
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-right: 20px;
+   }
+   .name{
+    margin: 5px;
+    font-size: medium;
+    color: var(--color--vivid-cyan-blue);
+   }
+   .biography{
+    margin: 2px;
+   }
+   .speciality{
+    margin: 5px;
+    font-size: small;
+    color: var(--color--vivid-cyan-blue);
+   }
+   .email{
+    margin: 2px;
+   }
+   .button{
+    background-color: var(--color--green);
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 8px;
+    border-radius: 17px;
+
+   }
+
+   

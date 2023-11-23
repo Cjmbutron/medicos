@@ -1,0 +1,37 @@
+/* Menu.module.css */
+
+.menu {
+    background-color: var(--color--green);
+    height: 90px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ul{
+    margin: 0px;
+   
+  }
+  
+  .item {
+    display: inline-block;
+    margin-right: 22px; 
+  }
+
+  
+  .link {
+    color: var(--color--white);
+    text-decoration: none;
+     font-size: 1.5rem;
+    margin: 5px;
+    padding: 15px;
+  }
+  
+  .link:hover {
+    color:var(--color--white);
+    background-color: var(--color--accent);
+    margin: 5px;
+    border-radius: 25px;
+  }
