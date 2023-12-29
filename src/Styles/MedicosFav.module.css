@@ -20,7 +20,7 @@
     flex-wrap: wrap;
     align-content: space-around;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .card{
@@ -47,6 +47,7 @@
    }
    .biography{
     margin: 2px;
+    max-width: 30ch;
    }
    .speciality{
     margin: 5px;
