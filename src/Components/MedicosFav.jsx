@@ -96,7 +96,7 @@ function MedicosFav() {
                             <FaWhatsapp style={{ margin: 5 }} /> contactar </button>
                     </div>
                 ))} 
-            }
+            
             </div>
 
         </div>
