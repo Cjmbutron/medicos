@@ -10,7 +10,7 @@ function Cabecera() {
         <a href="/" className={styles.link}>Inicio</a>
       </li>
       <li className={styles.item}>
-        <a href="/nosotros" className={styles.link}>Nosotros</a>
+        <a href="/nosotros" className={styles.link}>Medicos</a>
       </li>
       <li className={styles.item}>
         <a href="/contacto" className={styles.link}>Contacto</a>

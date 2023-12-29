@@ -2,17 +2,22 @@ import React from "react";
 import styles from "../Styles/Inicio.module.css"
 import Slider from "../Components/slider";
 import Tarjetas from "../Components/Tarjetas"
+import Banner from "../Components/Banner";
+import MedicosFav from "../Components/MedicosFav";
+import Noticias from "../Components/noticias";
 
 function Inicio(){
     return (
 
         <div className={styles.contenedor}> 
-            <h1 className={styles.h1}>
-                <Slider/>
-                
-            </h1>
+            <div className={styles.div}>
+                <Banner/>
+                <Tarjetas/>
+                <MedicosFav/>
+                <Noticias/>
+            </div>
             <div>
-            <Tarjetas />
+            
             </div>
             
          </div>

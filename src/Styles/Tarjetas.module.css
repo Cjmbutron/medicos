@@ -6,15 +6,21 @@
   }
   
   .card {
+    display: flex;
+    flex-direction: column;
     padding: 20px;
     border: 2px solid var(--color--light-green-cyan);
     border-radius: 24px;
     width: 200px;
     margin: 10px; 
+    align-items: center;
   }
   
   .image {
+    align-items: center;
+    justify-content: center;
     height: 150px;
+    width: 150px;
     margin-bottom: 8px; 
   }
   .h3{

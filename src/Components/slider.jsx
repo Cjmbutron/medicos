@@ -7,7 +7,7 @@ function Slider() {
   // declaracion de los contenidos de los slides
   const slides = [
     {
-      image: 'image1.jpg',
+      image: 'image1.png',
       title: 'Título 1',
       desc: 'Descripción 1',
       btnText: 'Siguiente'
@@ -27,30 +27,32 @@ function Slider() {
   ];
 
   return (
+    
     <div className={styles.slider}>
-      <div 
-        className={styles.slide}
-        style={{backgroundImage: `url(${slides[active].image})`}}
-      >
-        <div className={`${styles.column} ${styles.left}`}>
-          <div className={styles.details}>
-            <h2>{slides[active].title}</h2>
-            <p>{slides[active].desc}</p>
-            <button onClick={() => setActive(prev => prev < slides.length - 1 ? prev + 1 : 0)}>{slides[active].btnText}</button>
+        <div 
+          className={styles.slide}
+          style={{backgroundImage: `url(${slides[active].image})`}}
+        >
+          <div className={`${styles.column} ${styles.left}`}>
+            <div className={styles.details}>
+              <h2>{slides[active].title}</h2>
+              <p>{slides[active].desc}</p>
+              <button onClick={() => setActive(prev => prev < slides.length - 1 ? prev + 1 : 0)}>{slides[active].btnText}</button>
+            </div>
+          </div>
+          <div className={`${styles.column} ${styles.right}`}>
+            {/* Imagen grande */}
           </div>
         </div>
-        <div className={`${styles.column} ${styles.right}`}>
-          {/* Imagen grande */}
-        </div>
-      </div>
 
-      <div className={styles.actions}>
-        {/* Botones prev / next */}
-      </div>
+        <div className={styles.actions}>
+          {/* Botones prev / next */}
+        </div>
+        
+        <div className={styles.indicators}>
+          {/* Indicadores */}  
+        </div>
       
-      <div className={styles.indicators}>
-        {/* Indicadores */}  
-      </div>
     </div>
   );
 }

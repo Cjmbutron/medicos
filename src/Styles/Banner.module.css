@@ -1,0 +1,25 @@
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('../imagenes/background_slide.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    margin: 0;
+}
+.h1{
+    margin: 0px;
+}
+.hero-form-container {
+    height: 63%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.row {
+    margin-left: -1.2rem;
+    margin-right: -1.2rem;
+}

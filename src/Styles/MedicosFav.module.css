@@ -1,0 +1,69 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar {
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 8px;
+    border-radius: 18pc;
+}
+
+.grid {
+    /* estilos grid */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+   .content{
+    /* estilos generales del contenido */
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    margin-right: 20px;
+   }
+   .name{
+    margin: 5px;
+    font-size: medium;
+    color: var(--color--vivid-cyan-blue);
+   }
+   .biography{
+    margin: 2px;
+   }
+   .speciality{
+    margin: 5px;
+    font-size: medium;
+    color: var(--color--vivid-cyan-blue);
+   }
+   .email{
+    margin: 2px;
+   }
+   .button{
+    background-color: var(--color--green);
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 8px;
+    border-radius: 17px;
+   }
+   .button:hover{
+    background-color: #65c25c;
+   }

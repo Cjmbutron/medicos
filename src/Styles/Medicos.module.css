@@ -1,60 +1,68 @@
 .medicos {
     display: block;
-   }
-    
-   .title {
-    color:  var(--color--vivid-cyan-blue);
-    /* estilos título */ 
-   }
-   
-   .grid {
-    /* estilos grid */ 
+}
+
+.title {
+    color: var(--color--vivid-cyan-blue);
+    /* estilos título */
+}
+
+.grid {
+    /* estilos grid */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: center;
-    align-items: center;    
-   }
-   .card{
+    align-content: center;
+    justify-content: space-around;
+}
+
+.card {
     /* estilos para descripcion de las tarjetas de cada medico*/
+    width: 500px;
     display: flex;
     flex-direction: row;
     align-content: space-around;
-    justify-content: flex-end;
+    justify-content: space-around;
     align-items: center;
-    margin: 10px;
-   }
-   .avatar{
+    margin: 15px;
+}
+
+.avatar {
     /* estilos de la imagen */
     height: 100px;
     width: 100px;
     border-radius: 15px;
-   }
-   .content{
+}
+
+.content {
     /* estilos generales del contenido */
     display: flex;
     flex-direction: column;
     margin: 10px;
     margin-right: 20px;
-   }
-   .name{
+}
+
+.name {
     margin: 5px;
     font-size: medium;
     color: var(--color--vivid-cyan-blue);
-   }
-   .biography{
+}
+
+.biography {
     margin: 2px;
-   }
-   .speciality{
+}
+
+.speciality {
     margin: 5px;
     font-size: small;
     color: var(--color--vivid-cyan-blue);
-   }
-   .email{
+}
+
+.email {
     margin: 2px;
-   }
-   .button{
+}
+
+.button {
     background-color: var(--color--green);
     display: flex;
     align-items: center;
@@ -62,6 +70,4 @@
     padding: 8px;
     border-radius: 17px;
 
-   }
-
-   
+}
