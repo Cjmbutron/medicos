@@ -1,5 +1,21 @@
 .contenedor{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 2rem;
+    
+}
+.noticia{
+    margin: 20px 10px 20px 10px;
+    width: 45%;
+}
+.imagen{
+    border-radius: 85px 20px 85px 20px;
+}
+
+.titulo{
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 1.4em;
+    color:var(--color--accent)
 }

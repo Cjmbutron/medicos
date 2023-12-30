@@ -5,6 +5,7 @@ import Tarjetas from "../Components/Tarjetas"
 import Banner from "../Components/Banner";
 import MedicosFav from "../Components/MedicosFav";
 import Noticias from "../Components/noticias";
+import Footer from "../Components/footer";
 
 function Inicio(){
     return (
@@ -17,7 +18,6 @@ function Inicio(){
                 <Noticias/>
             </div>
             <div>
-            
             </div>
             
          </div>
