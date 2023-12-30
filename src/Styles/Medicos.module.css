@@ -76,3 +76,36 @@
     border-radius: 17px;
 
 }
+.buscador{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.select {
+    position: relative;
+    align-items: center;
+    margin: 10px 15px 10px 10px;
+    width: 300px;
+    border-radius: 14px;
+    height: 40px;
+    background-color: #fff;
+    color: #000;
+    font-family: sans-serif;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+.filtro{
+    width: 100px;
+    height: 40px;
+    background-color:var(--color--pale-cyan-blue);
+    color: #000;
+    font-family: sans-serif;
+    font-size: 14px;
+    border: 1px solid #ccc;
+  
+    &:hover {
+      background-color:var(--color--vivid-cyan-blue);
+    }
+}

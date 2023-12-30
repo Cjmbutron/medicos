@@ -154,17 +154,17 @@ function Nosotros() {
   // ]
 
   //metodo para utilizar la API
-  
-  
-  
-  const [medicos , setMedicos] = useState([]);
+
+
+
+  const [medicos, setMedicos] = useState([]);
   useEffect(() => {
-      fetch('http://localhost:3001/medicos')
-          .then(response => response.json())
-          .then(data => {
-              console.log("datos de ka api: ", data);
-              setMedicos(data)
-          });
+    fetch('http://localhost:3001/medicos')
+      .then(response => response.json())
+      .then(data => {
+        console.log("datos de ka api: ", data);
+        setMedicos(data)
+      });
   }, []);
 
 
@@ -173,62 +173,63 @@ function Nosotros() {
       <h1 className={styles.title}>
         Nuestros Médicos
       </h1>
-      <select value={filtro} onChange={handleFiltroChange}>
+      <div className={styles.buscador}>
+        <select value={filtro} onChange={handleFiltroChange} className={styles.select}>
 
-        <option value="todos">Todos</option>
-        <option value="Cardiología">Cardiología</option>
-        <option value="Ortopedia">Ortopedia</option>
-        <option value="Pediatría">Pediatría</option>
-        <option value="Ginecología">Ginecología</option>
-        <option value="Ortopedia">Ortopedia</option>
-        <option value="Dermatología">Dermatología</option>
-        <option value="Neurología">Neurología</option>
-        <option value="Endocrinología">Endocrinología</option>
-        <option value="Psiquiatría">Psiquiatría</option>
-        <option value="Urología">Urología</option>
-      </select>
+          <option value="todos">Todos</option>
+          <option value="Cardiología">Cardiología</option>
+          <option value="Ortopedia">Ortopedia</option>
+          <option value="Pediatría">Pediatría</option>
+          <option value="Ginecología">Ginecología</option>
+          <option value="Ortopedia">Ortopedia</option>
+          <option value="Dermatología">Dermatología</option>
+          <option value="Neurología">Neurología</option>
+          <option value="Endocrinología">Endocrinología</option>
+          <option value="Psiquiatría">Psiquiatría</option>
+          <option value="Urología">Urología</option>
+        </select>
 
-      <button onClick={handleFiltrarClick}>Filtrar</button>
-
+        <button onClick={handleFiltrarClick} className={styles.filtro}>Filtrar</button>
+      </div>
       <div className={styles.grid}>
         {resultados ? resultados.map((medico) => (
           <div className={styles.card} key={medico.id}>
             {/* ... (resto del código de la tarjeta de médico) */
-             
-                <div className={styles.card} key={medico.id}>
-                  <img className={styles.avatar} src={medico.foto} />
-      
-                  <div className={styles.content}>
-                    <p className={styles.name}> Dr(a). {medico.nombres} </p>
-                    <p className={styles.biography}> {medico.biography}</p>
-                    <p className={styles.speciality}> especialidad {medico.especialidad} </p>
-                    <p className={styles.email}> correo: {medico.email} </p>
-      
-                  </div>
-                  <button className={styles.button} onClick={() => handleWhatsAppClick(medico.teléfono)}>
-                    <FaWhatsapp style={{ margin: 5 }} /> contactar </button>
+
+              <div className={styles.card} key={medico.id}>
+                <img className={styles.avatar} src={medico.foto} />
+
+                <div className={styles.content}>
+                  <p className={styles.name}> Dr(a). {medico.nombres} </p>
+                  <p className={styles.biography}> {medico.biography}</p>
+                  <p className={styles.speciality}> especialidad {medico.especialidad} </p>
+                  <p className={styles.email}> correo: {medico.email} </p>
+
                 </div>
-            
+                <button className={styles.button} onClick={() => handleWhatsAppClick(medico.teléfono)}>
+                  <FaWhatsapp style={{ margin: 5 }} /> contactar </button>
+              </div>
+
             }
           </div>
         )) : medicos.map((medico) => (
           <div className={styles.card} key={medico.id}>
             {/* ... (resto del código de la tarjeta de médico) */
-               <div className={styles.card} key={medico.id}>
-               <img className={styles.avatar} src={medico.foto} />
-   
-               <div className={styles.content}>
-                 <p className={styles.name}> Dr(a). {medico.nombres} </p>
-                 <p className={styles.biography}> {medico.biography}</p>
-                 <p className={styles.speciality}> especialidad {medico.especialidad} </p>
-                 <p className={styles.email}> correo: {medico.email} </p>
-   
-               </div>
-               <button className={styles.button} onClick={() => handleWhatsAppClick(medico.teléfono)}>
-                 <FaWhatsapp style={{ margin: 5 }} /> contactar </button>
-             </div>
+              <div className={styles.card} key={medico.id}>
+                <img className={styles.avatar} src={medico.foto} />
+
+                <div className={styles.content}>
+                  <p className={styles.name}> Dr(a). {medico.nombres} </p>
+                  <p className={styles.biography}> {medico.biography}</p>
+                  <p className={styles.speciality}> especialidad {medico.especialidad} </p>
+                  <p className={styles.email}> correo: {medico.email} </p>
+
+                </div>
+                <button className={styles.button} onClick={() => handleWhatsAppClick(medico.teléfono)}>
+                  <FaWhatsapp style={{ margin: 5 }} /> contactar </button>
+              </div>
             }
-           
+
           </div>
         ))}
       </div>
