@@ -1,4 +1,4 @@
-.contenedor{
+.contenedor {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,9 +9,11 @@
     height: 500px;
     margin: 0;
 }
-.h1{
+
+.h1 {
     margin: 0px;
 }
+
 .hero-form-container {
     height: 63%;
     position: absolute;
@@ -22,4 +24,38 @@
 .row {
     margin-left: -1.2rem;
     margin-right: -1.2rem;
+}
+
+.h2 {
+    color: rgb(0, 0, 0);
+    font-family: var(--head-fontFamily);
+    font-weight: var(--head-fontWeight);
+    font-style: var(--head-fontStyle);
+}
+
+.p {
+    align-items: baseline;
+    color: rgb(0, 0, 0);
+    font-family: var(--body-fontFamily);
+    font-weight: var(--body-fontWeight);
+    font-style: var(--body-fontStyle);
+}
+
+.button {
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: none;
+    scroll-behavior: smooth;
+    font-family: var(--body-fontFamily);
+    font-weight: 2rem;
+    font-style: var(--body-fontStyle);
+    background-color: rgb(89, 89, 89);
+    color: rgb(255, 255, 255);
+    border-radius: 0px;
+    border-color: rgb(89, 89, 89);
+    padding: 1.3rem;
+    &:hover{
+        color: red;
+    }
+    text-decoration: none;
 }
