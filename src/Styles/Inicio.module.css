@@ -1,13 +1,18 @@
 
 .contenedor{
     
-    display: block;
+    display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 .h1{
   margin: 0px;
   align-content: center;
   color: var(--color--luminous-vivid-amber);
+}
+
+@media screen and (min-width: 800px) {
+  .contenedor {
+    margin: 10em 2em;
+  }
 }

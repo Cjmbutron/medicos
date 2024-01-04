@@ -26,3 +26,12 @@
     line-height: 1.4em;
     color: var(--color--accent)
 }
+
+@media screen and (max-width: 800px) {
+    .contenedor{
+        flex-direction: column;
+    }
+    .imagen {
+      width: 90%;
+    }
+  }

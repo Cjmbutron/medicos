@@ -42,12 +42,14 @@
 }
 
 .button {
+    margin-top: 50px;
     border-width: 2px;
     border-style: solid;
     box-shadow: none;
     scroll-behavior: smooth;
     font-family: var(--body-fontFamily);
     font-weight: 2rem;
+    text-transform: capitalize;
     font-style: var(--body-fontStyle);
     background-color: rgb(89, 89, 89);
     color: rgb(255, 255, 255);
@@ -55,7 +57,17 @@
     border-color: rgb(89, 89, 89);
     padding: 1.3rem;
     &:hover{
-        color: red;
+        background-color: rgb(41, 40, 40);
+        border-color:  rgb(41, 40, 40);
+        font-size: 1.2rem;
     }
     text-decoration: none;
 }
+
+empezando a realizar los cambios responsive
+@media screen and (min-width: 800px) {
+    .contenedor {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+  }
