@@ -5,10 +5,9 @@ function Banner() {
     return (
         <div className={styles.contenedor}>
             <h1 className={styles.h1}> Encuentra medicos dispuestos a ayudarte </h1>
-            <div >
-                <p className={styles.p}>Conoce a nuestros medicos registrados en nuestra lista.</p>
-                <button className={styles.button} > <a className={styles.button}  href='http://localhost:3000/nosotros'>  nuestros medicos</a></button>
-            </div>
+            <p className={styles.p}>Conoce a nuestros medicos registrados en nuestra lista.</p>
+            <button className={styles.button} > <a className={styles.button}  href='http://localhost:3000/nosotros'>  nuestros medicos</a></button>
+
         </div>
     );
 }

@@ -32,3 +32,10 @@
   }
   
   /* More styles.. */
+
+  @media screen and (max-width: 800px) {
+    .container {
+      flex-direction: column;
+      margin: auto;
+    }
+  }

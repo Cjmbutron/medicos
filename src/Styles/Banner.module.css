@@ -64,10 +64,29 @@
     text-decoration: none;
 }
 
-empezando a realizar los cambios responsive
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
     .contenedor {
-        padding-left: 20px;
-        padding-right: 20px;
+        
     }
+    .h1 {
+        text-align: center;
+        margin: 5px;
+    }
+    .p{
+        text-align: center;
+        margin: 5px;
+        margin-bottom: 20px;
+    }
+    .button{
+        margin: 10px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        padding: 3px;
+        text-align: center;
+
+    }
+    
   }
