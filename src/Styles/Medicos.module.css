@@ -109,3 +109,17 @@
       background-color:var(--color--vivid-cyan-blue);
     }
 }
+
+
+@media screen and (max-width: 800px) {
+    .grid{
+        flex-direction: column;
+    }
+    .card{
+        flex-direction: column;
+        width: 90%;
+    }
+    .biography{
+        max-width: 32ch;
+    }
+}
