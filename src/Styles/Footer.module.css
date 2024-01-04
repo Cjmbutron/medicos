@@ -1,0 +1,10 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color--black);
+    color: aliceblue;
+}
+.redessociales{
+    color: aliceblue;
+    margin: 15px;
+}

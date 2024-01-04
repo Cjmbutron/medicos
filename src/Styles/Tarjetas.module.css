@@ -1,0 +1,41 @@
+.container {
+    display: flex;  
+    flex-direction: column 4;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px solid var(--color--light-green-cyan);
+    border-radius: 24px;
+    width: 200px;
+    margin: 10px; 
+    align-items: center;
+  }
+  
+  .image {
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    margin-bottom: 8px; 
+  }
+  .h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color--accent);
+    text-transform: uppercase;
+  }
+  
+  /* More styles.. */
+
+  @media screen and (max-width: 800px) {
+    .container {
+      flex-direction: column;
+      margin: auto;
+    }
+  }

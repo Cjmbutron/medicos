@@ -1,0 +1,19 @@
+
+.contenedor{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+}
+.h1{
+  margin: 0px;
+  align-content: center;
+  color: var(--color--luminous-vivid-amber);
+}
+
+@media screen and (max-width: 800px) {
+  .contenedor {
+    margin: auto;
+  }
+}

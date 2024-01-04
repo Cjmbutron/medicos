@@ -1,0 +1,37 @@
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+.noticia {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 10px 20px 10px;
+    padding: 30px;
+}
+
+.imagen {
+    border-radius: 85px 20px 85px 20px;
+}
+
+.titulo {
+    font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 1.4em;
+    color: var(--color--accent)
+}
+
+@media screen and (max-width: 800px) {
+    .contenedor{
+        flex-direction: column;
+    }
+    .imagen {
+      width: 90%;
+    }
+  }
